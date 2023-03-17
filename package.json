@@ -1,10 +1,40 @@
 {
-  "name": "server",
+  "name": "global-metrika",
   "version": "1.0.0",
   "main": "index.js",
+  "description": "global-metrika service",
   "author": "enzear1 <enzear@mail.ru>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "start:ts": "jspm install",
+    "dev:ts": "",
+    "start:js": "",
+    "dev:js": ""
+  },
+  "bin": {
+    "app": "./bin/cli.ts"
+  },
   "devDependencies": {
+    "@types/cookie-parser": "^1.4.3",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "jest": "^29.5.0",
     "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "winston": "^3.8.2"
+  },
+  "engines": {
+    "vscode": "^1.22.0",
+    "node": ">= 18.15.0",
+    "npm": ">= 8.5.0",
+    "yarn": ">= 1.12.19"
   }
 }
